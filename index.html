@@ -7,23 +7,24 @@
     <style>
         #main{
             border: 2px solid black;
-            padding: 10px;
+            padding: 30px;
             display: flex;
             flex-wrap: wrap;
             flex-direction: row;
             justify-content: center;
             background-image: url(./24-Basic-UI-Icons-Figma.webp);
+            gap: 50px;
         }
-        #div1{
+        #div1,#div2{
             border: 2px solid red;
             display: flex;
             flex-wrap: wrap;
-            flex-direction: row;
+            flex-direction: column;
             justify-content: center;
             padding: 135px;
         }
         @media screen and (min-width:0px) and (max-width:700px){
-            #div1{
+            #div1,#div2{
                 background-image: url(./Nayani\ Karthik.JPG);
                 background-size: 300px;
                 background-repeat: no-repeat;
@@ -31,43 +32,57 @@
             }
         }
         @media screen and (min-width:321px) and (max-width:460px){
-            #div1{
+            #div1,#div2{
                 background-image: url(./rohit\ 2\ for.webp);
                 background-size: 300px;
                 background-repeat: no-repeat;
             }
         }
         @media screen and (min-width:461px) and (max-width:650px){
-            #div1{
+            #div1,#div2{
                 background-image: url(./Nivetha-Thomas\ 2.jpg);
                 background-size: 300px;
                 background-repeat: no-repeat;
             }
         }
         @media screen and (min-width:651px) and (max-width:800px){
-            #div1{
+            #div1,#div2{
                 background-image: url(./parbhas\ 2.jpg);
                 background-size: 300px;
                 background-repeat: no-repeat;
             }
         }
         @media screen and (min-width:801px) and (max-width:1000px){
-            #div1{
+            #div1,#div2{
                 background-image: url(./prabhas\ 3.avif);
                 background-size: 300px;
                 background-repeat: no-repeat;
             }
         }
         @media screen and (min-width:1001px) and (max-width:1100px){
-            #div1{
+            #div1,#div2{
                 background-image: url(./nivetha\ thomas\ 3.jpg);
                 background-size: 300px;
                 background-repeat: no-repeat;
             }
         }
         @media screen and (min-width:1101px) and (max-width:1200px){
-            #div1{
+            #div1,#div2{
                 background-image: url(./rohit\ sharma\ 3.jpg);
+                background-size: 370px;
+                background-repeat: no-repeat;
+            }
+        }
+        @media screen and (min-width:1201px) and (max-width:1500px){
+            #div1,#div2{
+                background-image: url(./prabhas\ 3.avif);
+                background-size: 300px;
+                background-repeat: no-repeat;
+            }
+        }
+        @media screen and (min-width:1501px) and (max-width:1600px){
+            #div1,#div2{
+                background-image: url(./rohit\ 2\ for.webp);
                 background-size: 300px;
                 background-repeat: no-repeat;
             }
@@ -79,6 +94,7 @@
     <center><h1>Using the Media Syntax</h1></center>
     <div id="main">
         <div id="div1"></div>
+        <div id="div2"></div>
     </div>
 </div>
 </body>

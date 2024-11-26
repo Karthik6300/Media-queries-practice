@@ -6,19 +6,28 @@
     <title>Media Syntax</title>
     <style>
         #main{
-            border: 2px solid black;
-            width: 300px;
+            border: 3px solid black;
             height: 300px;
-            position: absolute;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-items:center;
         }
-        @media screen and (min-width:0px) and (max-width:320px){
-            #main{
+        #div1{
+            border: 2px solid red;
+            width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-items: center;       
+        }
+        @media screen and (min-width:0px) and (max-width:700px){
+            #div1{
                 background-image: url(./Nayani\ Karthik.JPG);
-                background-size: 332px;
+                background-size: 300px;
                 background-repeat: no-repeat;
             }
         }
-        @media screen and (min-width:321px) and (max-width:460px){
+        /*@media screen and (min-width:321px) and (max-width:460px){
             #main{
                 background-image: url(./rohit\ 2\ for.webp);
                 background-size: 300px;
@@ -52,13 +61,17 @@
                 background-size: 300px;
                 background-repeat: no-repeat;
             }
-        }
+        }*/
+
 
     </style>
 </head>
 <body>
-    <h1>Using the Media Syntax</h1>
+<div id="div">
+    <center><h1>Using the Media Syntax</h1></center>
     <div id="main">
+        <div id="div1"></div>
     </div>
+</div>
 </body>
 </html>
